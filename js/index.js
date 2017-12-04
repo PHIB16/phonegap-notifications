@@ -46,7 +46,7 @@ function createDialog() {
 function dialogDismissed(buttonIndex) {
 	
 	if(buttonIndex==1) new Toast({content: hungryReminder(), duration: 3000});
-   	else if(buttonIndex==2) new Toast({content: 'Good boi', duration: 3000});
+   	else if(buttonIndex==2) new Toast({content: hungryYet(), duration: 3000});
 
 }
 
