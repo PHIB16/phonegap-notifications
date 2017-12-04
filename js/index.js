@@ -79,7 +79,7 @@ function hungryYet(){
     //generate a time to post notification
     //
     var currentTime = new Date().getTime(); //current time
-    var notificationTime = new Date(currentTime + 60000); //delayed time  - add 60 second
+    var notificationTime = new Date(currentTime + 20000); //delayed time  - add 60 second
     			
     //
     //setup notification
