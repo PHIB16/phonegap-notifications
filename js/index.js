@@ -55,7 +55,7 @@ function hungryReminder() {
     //generate a time to post notification
     //
     var currentTime = new Date().getTime(); //current time
-    var notificationTime = new Date(currentTime + 30000); //delayed time  - add 1 second
+    var notificationTime = new Date(currentTime + 10000); //delayed time  - add 1 second
     			
     //
     //setup notification
@@ -68,6 +68,27 @@ function hungryReminder() {
         date: 		notificationTime, 
         badge: 		notification_count++
    	});
+}
+
+function hungryYet(){
+    //
+    //generate a time to post notification
+    //
+    var currentTime = new Date().getTime(); //current time
+    var notificationTime = new Date(currentTime + 10000); //delayed time  - add 1 second
+    			
+    //
+    //setup notification
+    //
+    
+    cordova.plugins.notification.local.schedule({ 
+    	id: 		1,
+        title: 		"Hey you",
+        message: 	"Are you hungry yet?",
+        date: 		notificationTime, 
+        badge: 		notification_count++
+   	});
+    
 }
 
    
