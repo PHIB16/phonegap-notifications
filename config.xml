@@ -20,6 +20,5 @@
 	
 	
 	<!-- required plugins go here -->
-	     
-
+	 <plugin name="cordova-plugin- dialogs"/>
 </widget>
