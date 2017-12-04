@@ -67,6 +67,10 @@ function hungryReminder() {
         message: 	"Get back to work, lazy boi!",
         date: 		notificationTime, 
         badge: 		notification_count++
+        
+        
+        
+        
    	});
 }
 
@@ -75,7 +79,7 @@ function hungryYet(){
     //generate a time to post notification
     //
     var currentTime = new Date().getTime(); //current time
-    var notificationTime = new Date(currentTime + 10000); //delayed time  - add 1 second
+    var notificationTime = new Date(currentTime + 60000); //delayed time  - add 60 second
     			
     //
     //setup notification
@@ -87,6 +91,9 @@ function hungryYet(){
         message: 	"Are you hungry yet?",
         date: 		notificationTime, 
         badge: 		notification_count++
+        
+        createDialog();
+        
    	});
     
 }
