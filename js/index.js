@@ -96,6 +96,11 @@ function hungryYet(){
         
    	});
     
+    cordova.plugins.notification.local.on("click", function (notification) {
+        
+           createDialog();
+        }
+    });
 }
 
    
