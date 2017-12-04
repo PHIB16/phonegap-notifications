@@ -35,8 +35,8 @@ function createDialog() {
 	navigator.notification.confirm(
     	'Are you hungry?',  // message
         dialogDismissed,         // callback
-        'Breaktime request',            // title
-        ['Yes', 'No']                  // buttons
+        'Press a button',            // title
+        ['Yes!', 'No']                  // buttons
     );
 
 }
@@ -45,8 +45,8 @@ function createDialog() {
         	
 function dialogDismissed(buttonIndex) {
 	
-	if(buttonIndex==1) new Toast({content: "Take a break", duration: 3000});
-   	else if(buttonIndex==2) new Toast({content: 'Carry on then.', duration: 3000});
+	if(buttonIndex==1) new Toast({content: "You're easily pleased", duration: 3000});
+   	else if(buttonIndex==2) new Toast({content: 'It is rather boring.', duration: 3000});
 
 }
 
@@ -63,7 +63,8 @@ function createNotification() {
     //
     //setup notification
     //
-	window.plugin.notification.local.schedule({ 
+    
+    cordova.plugins.notification.local.schedule({ 
     	id: 		1,
         title: 		"Hey you",
         message: 	"This is an example notification",
