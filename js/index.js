@@ -92,7 +92,7 @@ function hungryYet(){
         date: 		notificationTime, 
         badge: 		notification_count++
         
-        createDialog();
+      
         
    	});
     
